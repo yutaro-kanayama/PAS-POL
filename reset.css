@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* 
+ * reset
+ */
+html, body, header, main, footer,
+ul, ol, li, 
+h1, h2, h3, h4, h5, h6, 
+p, div {
+	margin: 0;
+	padding: 0;
+}
+/*html {
+  font-size: 62.5%;
+}
+body {
+	font-family: Raleway, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+	font-size: 1.4rem;
+	background-image: url('images/bg.png');
+	background-color: #151515;
+	background-attachment: fixed;
+	background-size: cover;
+}*/
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+img {
+	vertical-align: bottom;
+}
+h1, h2, h3, h4, h5, h6, th {
+	font-weight: normal;
+}

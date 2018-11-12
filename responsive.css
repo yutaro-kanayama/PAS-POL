@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@media (max-width: 375px) {
+
+/*
+ * common
+ */
+.global-nav ul {
+	flex-direction: column;
+}
+.global-nav ul li {
+	margin-left: 0;
+	border-bottom: 1px solid #ffffff;
+}
+.global-nav ul li a {
+	display: block;
+    padding: 1rem 7%;
+}
+.pc-none {
+	display: block;
+}
+.sp-none {
+	display: none;
+}
+.pc-br {
+	display: none;
+}
+.sp-br {
+	display: block;
+}
+
+/*
+ * header
+ */
+.header {
+	/*position: static;*/
+	padding: 0;
+	flex-direction: column;
+}
+.header-nav {
+	background-color: rgba(0,0,0,0.7);
+	overflow: hidden;
+	height: 275px
+}
+.nav_toggle {
+	display: flex;
+	align-items: center;
+	padding: 0 7%;
+	width: 100%;
+	height: 50px;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+.hamburger {
+	width: 15px;
+	height: 11px;
+	margin-left: auto;
+}
+.siteLogo-sp {
+	width: 197px;
+    height: 178px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/*
+ * concept
+ */
+.concept {
+	padding: 70px 30px;
+}
+.conceptCopy {
+	text-align: left;
+	font-size: 36px;
+}
+.conceptMessage {
+	text-align: left;
+	font-size: 15px;
+}
+.concept-siteLogo {
+	transform: scale(0.7);
+}
+
+/*
+ * section-common
+ */
+.section-header {
+	justify-content: center;
+}
+.heading:after {
+	margin: 10px auto 0;
+}
+.section-footer .more {
+	margin: 50px auto 0;
+}
+
+
+/*
+ * product
+ */
+.product {
+	padding: 70px 5%;
+}
+.product-card {
+	width: 50%;
+	margin-top: 30px;
+	padding: 0;
+}
+
+/*
+ * news
+ */
+.news {
+	padding: 70px 5%;
+}
+.news-card {
+	margin-top: 40px;
+	flex-direction: column;
+}
+.news-card-image {
+	width: 100%;
+}
+.news-card-body {
+	width: 100%;
+	margin: 15px 0 0;
+}
+
+/*
+ * share
+ */
+.share-list {
+	flex-wrap: wrap;
+}
+.share-list li {
+	margin: 5px;
+}
+.facebook {
+    margin-right: 0;
+}
+.twitter {
+    margin-right: 0;
+}
+.line {
+    border-color: #8ec09d;
+    color: #8ec09d;
+}
+.line:hover {
+    background-color: #8ec09d;
+    color: #ffffff;
+}
+
+/*
+ * footer-navi-area
+ */
+.footer-navi-area {
+	padding: 0;
+    text-align: center;
+}
+.footer-nav {
+	background-color: #939899;
+}
+
+/*
+ * footer
+ */
+.footer-inner {
+	flex-direction: column;
+	padding: 0 10%;
+}
+.footer-siteLogo {
+	margin: 0 auto;
+}
+.copyright {
+	margin: 25px auto 0;
+	text-align: center;
+}
+
+
+}
