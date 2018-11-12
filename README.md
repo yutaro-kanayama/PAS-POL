@@ -11,5 +11,5 @@ script.js
 * スマホグローバルナビアコーディオン
 * トップへ戻る
 
-jQueryとJavaScriptネイティブで実装。jQueryのプログラミング箇所はコメントアウトしてあります。
+jQueryとJavaScriptネイティブで実装。jQueryのプログラミング箇所はコメントアウトしてあります。  
 jquery.bgswitcher.jsはjQueryでメインビジュアル自動切り替えを実装するためのプラグインです。
