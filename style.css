@@ -92,7 +92,7 @@ body {
     opacity: 0;
 }
 .back-visual {
-	background-image: url('images/main_visual_13-0x0.jpg');
+	background-image: none;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -103,6 +103,9 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+}
+.slides {
+	display: none;
 }
 .mainVisual-arrow {
 	width: 22px;

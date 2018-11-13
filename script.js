@@ -58,7 +58,6 @@ $(function(){
 		}, 10);
 	});
 
-
 	/*
 	 * スマホグローバルナビアコーディオン（JS Native）
 	 */
@@ -95,37 +94,28 @@ $(function(){
 		}, 10);
 	});
 
-
 	/*
 	 * メインビジュアル切り替え（JS Native）
 	 */
-	const images = [
-    	'images/main_visual_13-0x0.jpg',
-    	'images/main_visual_6-0x0.jpg',
-    	'images/main_visual_2-0x0.jpg',
-    	'images/main_visual_7-0x0.jpg',
-    	'images/main_visual_111-0x0.jpg'
-    ];
+    const images = document.getElementsByClassName('slides-image');
+	const frontVisual = document.getElementById('front-visual');
+	const backVisual = document.getElementById('back-visual');
 	let i = 0;
+	backVisual.style.backgroundImage = `url(${images[i].src})`;
 
 	setInterval(function(){
-		let frontVisual = document.getElementById('front-visual');
-		let backVisual = document.getElementById('back-visual');
-
-		frontVisual.style.backgroundImage = `url(${images[i]})`;
+		frontVisual.style.backgroundImage = `url(${images[i].src})`;
 		frontVisual.style.opacity = 1;
-
 		if (i >= images.length - 1) {
 			i = 0;
 		} else {
 			i++;
 		}
-		backVisual.style.backgroundImage = `url(${images[i]})`;
+		backVisual.style.backgroundImage = `url(${images[i].src})`;
 
 		// フロント画像をフェードアウト
 		var begin = new Date() - 0;
 		var period = 1000;
-
 		var id = setInterval(function(){
 	    	var current = new Date() - begin;
 		    if (current > period) {
@@ -136,6 +126,6 @@ $(function(){
 	    	frontVisual.style.opacity = opacity;
 		}, 10);
 		
-	}, 5000);
+	}, 6000);
 
 }());
